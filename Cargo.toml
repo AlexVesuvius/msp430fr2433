@@ -23,3 +23,8 @@ version = "0.3.1"
 
 [features]
 rt = ["msp430-rt/device"]
+
+[package.metadata.docs.rs]
+features = ["device"]
+targets = ["msp430-none-elf"]
+cargo-args = ["-Z", "build-std=core"]
